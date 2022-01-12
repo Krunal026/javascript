@@ -1,0 +1,28 @@
+//wap to accept length and breadth and then display area 
+
+<html>
+    <head>
+        <script>
+            function hey()
+            {
+                var len,bre,area;
+
+                len=parseFloat(document.f1.n1.value);
+                bre=parseFloat(document.f1.n2.value);
+
+                area=len*bre;
+                document.getElementById("result").innerHTML = result;
+                alert("Area = " +area);
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Area</h1>
+
+        <hr>
+        <center>
+            <form name="f1" style="width:50%"></form>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+
+//wap to accept 3 numbers and display addtion of 3 numbers
+
+<html>
+    <head>
+        <script>
+            function hey()
+            {
+                var num1,num2,num3,result;
+
+                num1=parseInt (document.f1.n1.value);
+                num2=parseInt (document.f1.n2.value);
+                num3=parseInt (document.f1.n3.value);
+
+                result=num1+num2+num3;
+                document.getElementById("result").innerHTML = result;
+                alert("addition = " +result);
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Krunal</h1>
+        <hr>
+        <center>
+            <form name="f1" style="width:50%">
+            <fieldset>
+                <legend>Addition</legend>
+                Enter Number 1 <input type="text" name="n1" /> <br><br>
+                Enter Number 1 <input type="text" name="n2" /> <br><br>
+                Enter Number 1 <input type="text" name="n3" /> <br><br>
+                
+                <input type="button" value="addition" onclick="hey();"/> 
+
+                <br><br>
+
+                result : <span id="result" name="result"></span>
+            </fieldset>
+            
+            </form>
+        </center>
+    </body>
+</html>
