@@ -1,0 +1,35 @@
+// wap to accept radius of a circle and then print area and circ of a circle
+
+<html>
+    <head>
+        <script>
+            function hey()
+            {
+                var rad,area,circ;
+                rad=parseInt(document.f1.n1.value);
+
+                area=3.14*rad*rad;
+                circ=2*3.14*rad;
+
+                alert("area of circle is="+area);
+                alert("Circumference Of Circle is"+circ);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Krunal Jibhkate</h1>
+
+        <hr>
+        <center>
+            <form name="f1" style="width:50%">
+            <fieldset>
+                <legend>Circle</legend>
+                Enter Radius <input type="text" name="n1"/> <br><br>
+
+                <input type="button" value="area" onclick="hey();"/>
+            </fieldset>
+            
+            </form>
+        </center>
+    </body>
+</html>

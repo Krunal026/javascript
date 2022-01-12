@@ -1,0 +1,36 @@
+<!-- wap to accept length , breadth and height and then print volume. -->
+
+<html>
+  <head>
+    <script>
+      function hey() {
+        var len, bre, hei, vol;
+        len = parseInt(document.f1.n1.value);
+        bre = parseInt(document.f1.n2.value);
+        hei = parseInt(document.f1.n3.value);
+
+        vol = len * bre * hei;
+
+        alert("Volumee=" + vol);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>KRUNAL</h1>
+
+    <hr />
+    <center>
+      <form name="f1" style="width: 50%">
+        <fieldset>
+          <legend>Volume</legend>
+
+          Enter Length <input type="text" name="n1" /> <br /><br />
+          Enter Breadth <input type="text" name="n2" /> <br /><br />
+          Enter Height <input type="text" name="n3" /> <br /><br />
+
+          <input type="button" value="vol" onclick="hey();" />
+        </fieldset>
+      </form>
+    </center>
+  </body>
+</html>
