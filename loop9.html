@@ -1,0 +1,52 @@
+<!-- assignment : wap to accept a number and print factorial using do while loop. -->
+
+<html>
+    <head>
+        <script>
+            function hey()
+            {
+                var num,fact=1;
+                num=parseInt(document.f1.n1.value);
+                var i=num;
+
+                do
+                {
+                    fact=fact*i;
+
+                    i--;
+                }
+                while(i>0)
+
+
+                document.getElementById("r1").innerHTML=fact;
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Factorial</h1>
+        <hr>
+        <center>
+            <form name="f1" style="width:50%">
+                <fieldset>   
+                    <legend>
+                        Calculation
+                    </legend>
+    
+                    Enter Number<input type =text name="n1"/>
+    
+                    <br><br>
+    
+                    <input type=button value="result" onclick="hey();"/>
+    
+                    <br>
+    
+                    Result : <span id="r1" name="res"></span>
+                </fieldset>
+                
+                </form>
+            </center>
+        </body>
+    </html>
+    
