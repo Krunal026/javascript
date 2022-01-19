@@ -1,0 +1,36 @@
+<html>
+    ><head>
+        <script>
+            function hey(m1,m2,m3)
+            {
+                var total=parseInt(m1)+parseInt(m2)+parseInt(m3);
+
+                var per=(total/300)*100.0;
+
+                document.getElementById("t1").innerHTML=total;
+                document.getElementById("t2").innerHTML=per;
+
+            }
+        </script>
+    </head>
+    <center>
+    <form name="f1">
+        Marks 1 : <input type=text name="t1" /><br><br>
+        Marks 2 : <input type=text name="t2" /><br><br>
+        Marks 3 : <input type=text name="t3" /><br><br>
+
+        <input type="button" value="Click" onclick="hey(document.f1.t1.value,document.f1.t2.value,document.f1.t3.value)"/>
+
+
+        <br><br>
+
+        Total : <span id="t1"></span>
+        <br><br>
+        Percentage : <span id="t2"></span>
+        
+        
+
+
+    </form>
+    </center>
+</html>
