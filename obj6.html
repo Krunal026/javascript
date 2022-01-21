@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            function validate()
+            {
+                var msg;
+
+                if(document.f1.n1.value.length>5)
+                {
+                    msg="Good";
+                }
+                else
+                {
+                    msg="Poor";
+                }
+
+                document.getElementById('hey').innerText=msg;
+            }
+        </script>
+    </head>
+    <form name="f1">
+        <input type="password" value="" name="n1" onkeyup="validate()">
+
+        Strength : <span id="hey">No Strength</span>
+    </form>
+</html>

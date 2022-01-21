@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h2>Javascript Programs</h2>
+
+        Enter Your Name : <input type="text" id="fname" onchange="uc()">
+
+        <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+        <script>
+            function uc()
+            {
+                const x = document.getElementById("fname");
+                x.value = x.value.toUpperCase();
+
+            }
+        </script>
+    </body>
+</html>
